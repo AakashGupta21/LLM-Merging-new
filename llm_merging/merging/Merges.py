@@ -14,6 +14,8 @@ from transformers import (
 import llm_merging.model.decoder_functions as decoder_functions
 import llm_merging.model.encoder_decoder_functions as encoder_decoder_functions
 
+# Set Hugging Face Auth Token (replace with a valid one)
+os.environ["HF_AUTH_TOKEN"] = "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"
 
 class Merges(object):
 
@@ -21,7 +23,10 @@ class Merges(object):
         self.name = name
 
         self.list_models = None
-         
+
+        # Set Hugging Face Auth Token (replace with a valid one)
+        os.environ["HF_AUTH_TOKEN"] = "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"
+
         self.loaded_models = None
         self.loaded_configs = None
         self.base_model = None
