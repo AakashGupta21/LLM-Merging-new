@@ -3,7 +3,7 @@ from llm_merging.merging.Merges import Merges
 from peft import get_peft_model, set_peft_model_state_dict
 from typing import List, Tuple, Dict
 
-class FlanT5Avg(Merges):
+class FlanT5GeoMed(Merges):
     def __init__(self, name: str):
         super().__init__(name)
 
