@@ -13,6 +13,7 @@ def all_merge_handlers():
         "llama_avg": LlamaAvg,
         "tiny_llama_avg": TinyLlamaAvg,
         "flant5_avg": FlanT5Avg,
+        "flant5_geomed":FlanT5GeoMed,
         ## TODO Add more merge methods here
     }
     
